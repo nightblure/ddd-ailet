@@ -1,3 +1,5 @@
+[![Pages](https://github.com/nightblure/ddd-ailet/actions/workflows/deploy.yml/badge.svg)](https://github.com/nightblure/ddd-ailet/actions/workflows/deploy.yml)
+
 # Welcome to [Slidev](https://github.com/slidevjs/slidev)!
 
 To start the slide show:

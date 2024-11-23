@@ -1,13 +1,22 @@
 [![Pages](https://github.com/nightblure/ddd-ailet/actions/workflows/deploy.yml/badge.svg)](https://github.com/nightblure/ddd-ailet/actions/workflows/deploy.yml)
 
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+## Local using commands
 
-To start the slide show:
+deps:
+```bash
+npm install
+```
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
+local run:
+```bash
+make dev
+```
 
-Edit the [slides.md](./slides.md) to see the changes.
+pdf export:
+```
+make pdf
+```
+
+---
 
 Learn more about Slidev at the [documentation](https://sli.dev/).

@@ -29,14 +29,5 @@ class BoundingBox:
 
         return True
 
-    def is_intersect_with_other(self, other_bb: 'BoundingBox') -> bool:
-        if self.x2 < other_bb.x1 or other_bb.x2 < self.x1:
-            return False
-
-        if self.y2 < other_bb.y1 or other_bb.y2 < self.y1:
-            return False
-
-        return True
-
 ```
 <SlideCurrentNo class="absolute bottom-[5px] left-1/2 transform -translate-x-1/2 items-center" />

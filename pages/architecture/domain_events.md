@@ -43,5 +43,11 @@ class ProductEntity(DomainEventsMixin):
         self.push(event)
         return None
 
+"""
+* оповещение других сервисоы об изменениях;
+
+* выполенение распределенных транзакций, если транзакция 
+предполагает изменения агрегатов в разных ограниченных контекстах и сервисах
+"""
 ```
 <SlideCurrentNo class="absolute bottom-[5px] left-1/2 transform -translate-x-1/2 items-center" />

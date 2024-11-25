@@ -2,32 +2,20 @@
 
 ```python {*}{maxHeight:'360px'}
 @dataclass(slots=True)
-class ProductAttributesEntity:
-    id: str
-    is_active: bool = True
-    ready_to_sync: bool = False
-    external_id: str | None = None
-    
-    def disable(self) -> None:
-        self.is_active = False
-        self.ready_to_sync = True
-        self.external_id = None
-        return None
-
-
-@dataclass(slots=True)
 class ProductEntity:
     id: str
     size_vo: ProductSizeValueObject
-    product_attributes: list[ProductAttributesEntity]
+    product_attributes: list[ProductAttributes]
     is_active: bool = True
 
     def disable(self) -> None:
         if not self.is_active:
             raise ProductAlreadyDisabledError(self.id)
 
-        for attribute_entity in self.product_attributes:
-            attribute_entity.disable()
+        for attribute in self.product_attributes:
+            attribute.is_active = False
+            attribute.ready_to_sync = True
+            attribute.external_id = None
 
         self.is_active = False
         return None

@@ -16,7 +16,7 @@ src: ./pages/1_title.md
 ---
 
 ---
-src: ./pages/2_introduction.md
+src: ./pages/2_plan.md
 ---
 
 ---
@@ -25,6 +25,10 @@ src: ./pages/3_before_start.md
 
 ---
 src: ./pages/history_1.md
+---
+
+---
+src: ./pages/waterfall_and_agile.md
 ---
 
 ---
